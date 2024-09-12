@@ -27,7 +27,7 @@ jobs:
 
     - name: Run Checkstyle
       run: |
-        wget https://checkstyle.sourceforge.io/cmdline.html -O checkstyle.jar
+        wget https://github.com/checkstyle/checkstyle/releases/latest/download/checkstyle-<version>.jar -O checkstyle.jar
         java -jar checkstyle.jar -c /googlecheckstyle.xml src/*.java
 
     - name: Run Tests
