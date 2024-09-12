@@ -2,7 +2,7 @@ public class Person {
     // Attributes (data members)
     private String firstName;
     private String lastName;
-    private int age;
+    // private int age;
 
     // Constructor
     public Person(String firstName, String lastName, int age) {
