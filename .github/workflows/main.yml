@@ -25,6 +25,11 @@ jobs:
     - name: Compile Java Classes
       run: javac src/*.java -d out
 
+    - name: Run Checkstyle
+      run: |
+        wget https://checkstyle.sourceforge.io/cmdline.html -O checkstyle.jar
+        java -jar checkstyle.jar -c /googlecheckstyle.xml src/*.java
+
     - name: Run Tests
       run: |
         cd out
